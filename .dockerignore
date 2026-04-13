@@ -1,0 +1,21 @@
+cat > ~/siamabc_docker/.dockerignore <<'EOF'
+.git
+.gitignore
+.dockerignore
+out
+__pycache__
+*.pyc
+*.pyo
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mov
+*.mkv
+.venv
+venv
+env
+.vscode
+.idea
+EOF

@@ -1,0 +1,34 @@
+cat > ~/siamabc_docker/.gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Output files
+out/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.txt
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local temp
+tmp/
+temp/
+EOF

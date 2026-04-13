@@ -1,0 +1,19 @@
+_target_: SiamABC_tracker.SiamABCTracker
+penalty_k:  0.062 
+window_influence: 0.38 
+lr: 0.765
+windowing: cosine
+total_stride: 16
+score_size: 16
+N: 150
+dynamic_update: false
+similarity_score: false
+# ratio: 0.94
+stride: ${model.stride}
+smooth: false
+
+bbox_ratio: 0.5
+template_bbox_offset: 0.2
+search_context: 2
+instance_size: 256
+template_size: 128
