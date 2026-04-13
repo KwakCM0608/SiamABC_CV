@@ -4,7 +4,7 @@ SiamABC (WACV 2025) 기반 **웹캠 실시간 트래킹**
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 ### 1. OS
 
@@ -24,7 +24,7 @@ nvidia-smi
 
 ---
 
-## 🚀 Quick Start (가장 중요)
+## Quick Start
 
 ### 1. Clone
 
@@ -43,7 +43,7 @@ docker build -t siamabc:wacv2025-demo .
 
 ---
 
-### 3. X11 권한 열기 (GUI용)
+### 3. X11 권한
 
 ```bash
 xhost +local:docker
@@ -51,7 +51,7 @@ xhost +local:docker
 
 ---
 
-### 4. Docker 실행 (웹캠 + GUI)
+### 4. Docker 실행
 
 ```bash
 docker run --rm -it \
@@ -74,7 +74,7 @@ python /workspace/host/webcam_siamabc_track.py
 
 ---
 
-## 🎯 사용 방법
+## 사용 방법
 
 1. 실행하면 웹캠 화면이 뜸
 2. **Tracking할 대상을 마우스로 드래그해서 선택**
@@ -83,14 +83,14 @@ python /workspace/host/webcam_siamabc_track.py
 
 ---
 
-## ⌨️ 키 조작
+## 키 조작
 
 * `q` : 종료
 * `r` : Tracking 대상 다시 선택 (재초기화)
 
 ---
 
-## 📂 디렉토리 구조
+## 디렉토리 구조
 
 ```bash
 SiamABC_CV/
@@ -108,14 +108,14 @@ SiamABC_CV/
 
 ---
 
-## 💡 Tips
+## Tips
 
 * S_Tiny 모델 사용
 * 대상이 크게 가려지면 드리프트 발생 → `r`로 재선택
 
 ---
 
-## 🧠 구조 설명
+## 구조 설명
 
 Pipeline:
 
@@ -125,6 +125,6 @@ Webcam → ROI 선택 → SiamABC initialize → frame별 update → bbox 출력
 
 ---
 
-## 📜 License
+## License
 
 SiamABC 원본 저장소를 기반으로 구성됨
