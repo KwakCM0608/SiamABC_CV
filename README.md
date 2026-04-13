@@ -63,6 +63,10 @@ docker run --rm -it \
   -v $(pwd)/out:/workspace/out \
   siamabc:wacv2025-demo
 ```
+or
+```bash
+./siamabc.sh
+```
 
 ---
 
